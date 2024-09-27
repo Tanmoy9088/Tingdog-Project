@@ -1,0 +1,233 @@
+.gradient-background {
+  background: linear-gradient(300deg, #00bfff, #ff4c68, #ef8172);
+  background-size: 180% 180%;
+  animation: gradient-animation 18s ease infinite;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+*{
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.icon-square {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 0.75rem;
+}
+
+.profile-img {
+  height: 100px;
+  border-radius: 50%;
+  margin: 100px;
+}
+.bi {
+  border-radius: 5px;
+}
+.title {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 93.8vh;
+}
+.title1 {
+  max-width: 500px;
+}
+.title2 img {
+  padding-top: 100px;
+  object-fit: cover;
+}
+
+.features {
+  display: flex;
+  gap: 40px;
+  margin-top: 55px;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+  background-color: #f2f8f6;
+}
+
+.bg {
+  background-color: rgba(204, 198, 191, 0.366);
+  padding: 2px;
+}
+.testimonial {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #dbdbb585;
+}
+.tm > img {
+  height: 100px;
+  border-radius: 50%;
+  margin-top: 25px;
+}
+.tm h2 {
+  padding-top: 20px;
+}
+
+.tm1 {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 50px;
+  padding-bottom: 20px;
+}
+.tm1 img {
+  max-width: 150px;
+}
+
+.pricing-container{
+  background-color: #8eba956a;
+}
+
+.pricing-h2 {
+  text-align: center;
+  font-size: 1.5rem;
+  padding-bottom: 20px;
+}
+.pricing-h2 h2 {
+  font-size: 3rem;
+  padding: 20px;
+  padding-bottom: 5px;
+}
+
+.container {
+  display: flex;
+  gap: 20px;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  padding-bottom: 10px;
+}
+.plan-features li {
+  list-style: none;
+  padding: 0px;
+  margin-right: 25px;
+}
+
+.chichu {
+  background-color: #ea8678;
+  border: black 1px solid;
+  border-radius: 10px;
+  max-width: 400px;
+}
+.breed {
+  background-color: aliceblue;
+  margin-top: 0;
+  padding: 20px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border-bottom: 1px solid black;
+  border-radius: 10px;
+}
+.breed1 {
+  background-color: rgb(0, 0, 0);
+  color: #f3f2f1;
+  margin-top: 0;
+  padding: 20px;
+  border-bottom: 1px solid black;
+  border-radius: 10px;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.plan {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.button > button {
+  border: 1px solid black;
+  margin: 5px;
+  border-radius: 10px;
+  color: #000000;
+  background-color: #f9f9f9;
+}
+.button1 > button {
+  background-color: black;
+  margin: 5px;
+  border-radius: 10px;
+  color: aliceblue;
+}
+
+/* .footer{ */
+/* display: grid;
+  gap:10px;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: repeat(5,1fr) ;
+} */
+.footer {
+  display: flex;
+  gap: 50px;
+  justify-content: space-evenly; /*here ia the*/
+  padding-top: 15px;
+  /* align-items: center; */
+}
+
+@media (max-width: 600px) {
+  .title {
+    display: flex;
+    align-items: center;
+    height:50vh;
+    width: 100%;
+  }
+  .title2 img{
+    height:85%;
+    width:98%;
+    object-fit: cover;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+  }
+  .features {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-top: 55px;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .tm1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 50px;
+    padding-bottom: 20px;
+    width: 100%;
+  }
+  .container {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+    padding-bottom: 10px;
+    width: 100%;
+  }
+  .footer {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    justify-content: center;
+    align-items: center; /*here ia the*/
+    padding-top: 15px;
+    width: 100%;
+    /* align-items: center; */
+  }
+}
